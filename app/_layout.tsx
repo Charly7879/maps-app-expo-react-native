@@ -50,9 +50,14 @@ function RootLayoutNav() {
 
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
+      <Stack
+        screenOptions={{
+          headerShown: false,
+        }}
+      >
+        <Stack.Screen name='loading/index.tsx' options={{ animation: 'none' }} />
+        <Stack.Screen name='map/index.tsx' options={{ animation: 'fade' }} />
+        <Stack.Screen name='permitions/index.tsx' options={{ animation: 'fade' }} />
       </Stack>
     </ThemeProvider>
   );
