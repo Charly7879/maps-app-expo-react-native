@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import 'react-native-reanimated';
 
 import { useColorScheme } from '@/hooks/useColorScheme';
+import PermissionsCheckerProvider from '@/presentation/providers/PermissionsCheckerProvider';
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -50,15 +51,17 @@ function RootLayoutNav() {
 
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack
-        screenOptions={{
-          headerShown: false,
-        }}
-      >
-        <Stack.Screen name='loading/index.tsx' options={{ animation: 'none' }} />
-        <Stack.Screen name='map/index.tsx' options={{ animation: 'fade' }} />
-        <Stack.Screen name='permitions/index.tsx' options={{ animation: 'fade' }} />
-      </Stack>
+      <PermissionsCheckerProvider>
+        <Stack
+          screenOptions={{
+            headerShown: false,
+          }}
+        >
+          <Stack.Screen name='loading/index.tsx' options={{ animation: 'none' }} />
+          <Stack.Screen name='map/index.tsx' options={{ animation: 'fade' }} />
+          <Stack.Screen name='permitions/index.tsx' options={{ animation: 'fade' }} />
+        </Stack>
+      </PermissionsCheckerProvider>
     </ThemeProvider>
   );
 }

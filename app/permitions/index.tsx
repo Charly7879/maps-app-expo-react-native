@@ -1,9 +1,20 @@
-import { Text, View } from "react-native";
+import { Text, View } from "@/presentation/components/shared/Themed";
+import ThemedPressable from "@/presentation/components/shared/ThemedPressable";
+import { usePermissionsStorage } from "@/presentation/store/usePermissions";
 
 const PermitionsScreen = () => {
+    const { locationStatus, requestLocationPermission } = usePermissionsStorage();
+
     return (
-        <View>
-            <Text>PermitionsScreen</Text>
+        <View style={{
+            flex: 1,
+            justifyContent: 'center',
+            alignItems: 'center',
+        }}>
+            <ThemedPressable onPress={requestLocationPermission}>
+                Habilitar ubicación
+            </ThemedPressable>
+            <Text>Estado actual de los permisos: {locationStatus}</Text>
         </View>
     )
 };
