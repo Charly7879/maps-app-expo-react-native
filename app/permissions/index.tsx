@@ -2,7 +2,7 @@ import { Text, View } from "@/presentation/components/shared/Themed";
 import ThemedPressable from "@/presentation/components/shared/ThemedPressable";
 import { usePermissionsStorage } from "@/presentation/store/usePermissions";
 
-const PermitionsScreen = () => {
+const PermissionsScreen = () => {
     const { locationStatus, requestLocationPermission } = usePermissionsStorage();
 
     return (
@@ -18,4 +18,4 @@ const PermitionsScreen = () => {
         </View>
     )
 };
-export default PermitionsScreen;
+export default PermissionsScreen;
