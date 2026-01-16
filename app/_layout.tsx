@@ -57,9 +57,9 @@ function RootLayoutNav() {
             headerShown: false,
           }}
         >
-          <Stack.Screen name='loading/index.tsx' options={{ animation: 'none' }} />
-          <Stack.Screen name='map/index.tsx' options={{ animation: 'fade' }} />
-          <Stack.Screen name='permitions/index.tsx' options={{ animation: 'fade' }} />
+          <Stack.Screen name='loading/index' options={{ animation: 'none' }} />
+          <Stack.Screen name='map/index' options={{ animation: 'fade' }} />
+          <Stack.Screen name='permissions/index' options={{ animation: 'fade' }} />
         </Stack>
       </PermissionsCheckerProvider>
     </ThemeProvider>

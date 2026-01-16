@@ -1,5 +1,5 @@
 import { PermissionStatus } from "@/infrastructure/interfaces/location";
-import { usePermissionsStorage } from "@/presentation/store/usePermissions";
+import { usePermissionsStorage } from "@/presentation/store/usePermissionsStore";
 import { router } from "expo-router";
 import { PropsWithChildren, useEffect } from "react";
 import { AppState } from "react-native";

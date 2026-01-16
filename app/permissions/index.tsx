@@ -1,6 +1,6 @@
 import { Text, View } from "@/presentation/components/shared/Themed";
 import ThemedPressable from "@/presentation/components/shared/ThemedPressable";
-import { usePermissionsStorage } from "@/presentation/store/usePermissions";
+import { usePermissionsStorage } from "@/presentation/store/usePermissionsStore";
 
 const PermissionsScreen = () => {
     const { locationStatus, requestLocationPermission } = usePermissionsStorage();
