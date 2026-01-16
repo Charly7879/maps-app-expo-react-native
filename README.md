@@ -83,8 +83,8 @@ Para simular el seguimiento del usuario, es recomendable ejecutar la aplicación
 
    ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Autor  
 
-Carlos Ceballez
-*Técnico Superior en Programación - UTN*
-[linkedin.com/in/carlos-ceballez/](https://linkedin.com/in/carlos-ceballez/)
+Carlos Ceballez  
+*Técnico Superior en Programación - UTN*  
+[linkedin.com/in/carlos-ceballez/](https://linkedin.com/in/carlos-ceballez/)  
