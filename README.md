@@ -68,7 +68,7 @@ Para simular el seguimiento del usuario, es recomendable ejecutar la aplicación
 1. Clonar el repositorio
 
    ```bash
-   git clone https://github.com/tu-usuario/tu-repo.git
+   git clone https://github.com/Charly7879/maps-app-expo-react-native.git
    ```
 2. Instalar dependencias
 
